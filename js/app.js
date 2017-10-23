@@ -1,11 +1,12 @@
 $('document').ready(function(){
     // get Location
-    $.getJSON("http://ip-api.com/json", function(res){
+    $.getJSON("https://ipinfo.io/", function(res){
+        var locat = res.loc.split(',');
+        var lon = locat[1];
+        var lat = locat[0];
         var apiKey = "22f9a533752e54e33e75e81d31103466";
-        var lon = res.lon;
-        var lat = res.lat;
         // get weather info
-        $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+apiKey+"", function(data){
+        $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+apiKey+"", function(data){
             // weather Variables
             var loc = data.name;
             var fTemp = Math.round((data.main.temp) * 9/5 - 459.67);
