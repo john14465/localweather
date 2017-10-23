@@ -5,23 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Local Weather App</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="landing">
-        <div id="wrapper">
-            <h1>Local Weather</h1>
-            <h2 id="location"></h2>
-            <h3><span id="ftemp"></span>&deg;F/<span id="ctemp"></span>&deg;C</h3>
-            <hr>
-            <p>Conditions: <span id="conditions"></span></p>
-            <p>Wind Speed: <span id="wind"></span> mph</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
+        <div class="container">
+            <div id="wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Local Weather</h1>
+                        <h2 id="location"></h2>
+                        <h3 id="temp"></h3>
+                        <h4>High: <span id="htemp"></span> / Low: <span id="ltemp"></span></h4>
+                        <div class="switch">
+                            <label>
+                                Fahrenheit
+                                <input id="switch" type="checkbox">
+                                <span class="lever"></span>
+                                Celsius
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col s6">
+                        <p>Conditions: <span id="conditions"></span></p>
+                        <p>Wind Speed: <span id="wind"></span> mph</p>
+                    </div>
+                    <div class="col s6">
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Pressure: <span id="pressure"></span></p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
