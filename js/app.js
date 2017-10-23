@@ -49,23 +49,23 @@ $('document').ready(function(){
             // Change Background
             var weatherId = data.weather[0].id;
             if (weatherId < 299) {
-                $("#landing").css("background-image", "url(\"../img/thunder.jpg\")");
+                $("#landing").css("background-image", "url(\"img/thunder.jpg\")");
             } else if (weatherId > 300 &&  weatherId < 499) {
-                $("#landing").css("background-image", "url(\"../img/lightrain.jpg\")");
+                $("#landing").css("background-image", "url(\"img/lightrain.jpg\")");
             } else if (weatherId > 500 &&  weatherId < 599) {
-                $("#landing").css("background-image", "url(\"../img/rainy.jpg\")");
+                $("#landing").css("background-image", "url(\"img/rainy.jpg\")");
             } else if (weatherId > 600 &&  weatherId < 699) {
-                $("#landing").css("background-image", "url(\"../img/snow.jpg\")");
+                $("#landing").css("background-image", "url(\"img/snow.jpg\")");
             } else if (weatherId > 700 &&  weatherId < 799) {
-                $("#landing").css("background-image", "url(\"../img/fog.jpg\")");
+                $("#landing").css("background-image", "url(\"img/fog.jpg\")");
             } else if (weatherId === 800) {
-                $("#landing").css("background-image", "url(\"../img/sun.jpg\")");
+                $("#landing").css("background-image", "url(\"img/sun.jpg\")");
             } else if (weatherId >= 801 &&  weatherId < 899) {
-                $("#landing").css("background-image", "url(\"../img/overcast.jpg\")");
+                $("#landing").css("background-image", "url(\"img/overcast.jpg\")");
             } else if (weatherId >= 900 &&  weatherId < 907) {
-                $("#landing").css("background-image", "url(\"../img/storm.jpg\")");
+                $("#landing").css("background-image", "url(\"img/storm.jpg\")");
             } else if (weatherId > 908) {
-                $("#landing").css("background-image", "url(\"../img/partlycloudy.jpg\")");
+                $("#landing").css("background-image", "url(\"img/partlycloudy.jpg\")");
             } 
         })
     });
