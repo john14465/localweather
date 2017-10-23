@@ -59,7 +59,7 @@ $('document').ready(function(){
             } else if (weatherId > 700 &&  weatherId < 799) {
                 $("#landing").css("background-image", "url(\"../img/fog.jpg\")");
             } else if (weatherId === 800) {
-                $("#landing").css("background-image", "url(\"../img/sunny.jpg\")");
+                $("#landing").css("background-image", "url(\"../img/sun.jpg\")");
             } else if (weatherId >= 801 &&  weatherId < 899) {
                 $("#landing").css("background-image", "url(\"../img/overcast.jpg\")");
             } else if (weatherId >= 900 &&  weatherId < 907) {
